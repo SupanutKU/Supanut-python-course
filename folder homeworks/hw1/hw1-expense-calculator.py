@@ -1,10 +1,10 @@
-monthly_income = float(input("User's monthly income in THB"))
-rent_cost = float(input("Monthly rent/housing cost"))
-food_budget = int(input("Monthly food budget in THB"))
-transportation_cost = float(input("Monthly transportation expenses"))
-entertainment_budget = int(input("Monthly entertainment budget"))
-emergency_fund_percent = float(input("Percentage to save for emergency (e.g., 10.5)"))
-investment_percent = float(input("Percentage to invest (e.g., 15.0)"))
+monthly_income = float(input("User's monthly income in (THB): "))
+rent_cost = float(input("Monthly rent/housing cost: "))
+food_budget = int(input("Monthly food budget in (THB): "))
+transportation_cost = float(input("Monthly transportation expenses: "))
+entertainment_budget = int(input("Monthly entertainment budget: "))
+emergency_fund_percent = float(input("Percentage to save for emergency (e.g., 10.5): "))
+investment_percent = float(input("Percentage to invest (e.g., 15.0): "))
 
 Total_Fixed_Expenses = rent_cost + transportation_cost
 Total_Variable_Expenses = food_budget + entertainment_budget
