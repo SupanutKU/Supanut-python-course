@@ -22,47 +22,27 @@ print("Numbers less than 5:", less_than_5)
 
 #Exercise2
 lst = [8, 9, 10]
-lst[1] = 17            # Set second entry to 17
-lst += [4, 5, 6]       # Add 4, 5, 6 to the end
-lst.pop(0)             # Remove first entry
-lst.sort()             # Sort the list
-lst = lst * 2          # Double the list
-lst.insert(3, 25)      # Insert 25 at index 3
+lst[1] = 17
+lst += [4, 5, 6]
+lst.pop(0)
+lst.sort()
+lst = lst * 2
+lst.insert(3, 25)
 print("Final list:", lst)
 
 #Exercise3 string
-s = input("Enter a string: ")
-
-# 1. Total number of characters
+string = input("Enter a string: ")
 print("Length:", len(s))
-
-# 2. String repeated 10 times
-print("Repeated 10 times:", s * 10)
-
-# 3. First character
-if s:
-    print("First character:", s[0])
-
-# 4. First three characters
-print("First 3 characters:", s[:3])
-
-# 5. Last three characters
-print("Last 3 characters:", s[-3:])
-
-# 6. String backwards
-print("Backwards:", s[::-1])
-
-# 7. Seventh character or message
-if len(s) >= 7:
-    print("Seventh character:", s[6])
+print("Repeated 10 times:", string * 10)
+if string:
+    print("First character:", string[0])
+print("First 3 characters:", string[:3])
+print("Last 3 characters:", string[-3:])
+print("Backwards:", string[::-1])
+if len(string) >= 7:
+    print("Seventh character:", string[6])
 else:
     print("String too short for seventh character")
-
-# 8. String without first and last characters
-print("Without first and last:", s[1:-1])
-
-# 9. All caps
-print("Uppercase:", s.upper())
-
-# 10. Replace 'a' with 'e'
-print("Replace a with e:", s.replace('a', 'e'))
+print("Without first and last:", string[1:-1])
+print("Uppercase:", string.upper())
+print("Replace a with e:", string.replace('a', 'e'))
