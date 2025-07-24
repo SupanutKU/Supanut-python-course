@@ -19,18 +19,24 @@ if entered_pin == pin:
             print(f"Now money you have : {balance}")
         elif choice == "2":
             withdraw = float(input("Enter money withdraw: "))
-            balance -= withdraw
-            print(f"withdraw money : {withdraw:.2f}")
-            print(f"total money : {balance:.2f}")
+            if withdraw <= balance :
+                balance -= withdraw
+                print(f"withdraw money : {withdraw:.2f}")
+                print(f"total money : {balance:.2f}")
+            else:
+                print("Error! Not enough money to withdraw.")
         elif choice == "3":
-            deposit = float(input("Enter money deposit"))
-            balance += deposit
-            print(f"deposit money : {deposit:.2f}")
-            print(f"total money : {balance:.2f}")
+            deposit = float(input("Enter money deposit: "))
+            if deposit > 0:
+                balance += deposit
+                print(f"deposit money : {deposit:.2f}")
+                print(f"total money : {balance:.2f}")
+            else :
+                print("Error! please enter a positive integer.")
         elif choice == "4":
             print("Thank you!")
             break
         else:
-            print("error")
+            print("Error!")
 else:
     print("Invalid PIN")
