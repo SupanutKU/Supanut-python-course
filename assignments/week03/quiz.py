@@ -9,8 +9,6 @@ age = int(input("Enter age: "))
 
 # Your code here:
 
-
-
 # Complete this ATM simulation
 balance = 1000
 pin = "1234"
