@@ -32,8 +32,8 @@ print("Final list:", lst)
 
 #Exercise3 string
 string = input("Enter a string: ")
-print("Length:", len(s))
-print("Repeated 10 times:", string * 10)
+print("Length:", len(string))
+print("Repeated 10 times:", string * 10,)
 if string:
     print("First character:", string[0])
 print("First 3 characters:", string[:3])
