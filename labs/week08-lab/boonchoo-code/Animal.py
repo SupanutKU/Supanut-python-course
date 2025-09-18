@@ -1,5 +1,6 @@
 # Parent class (Base class)
 class Animal:
+    
     def __init__(self, name, species):
         self.name = name
         self.species = species
@@ -29,6 +30,7 @@ class Dog(Animal):
         print(f"{self.name} is fetching the ball")
 
 class Cat(Animal):
+    
     def __init__(self, name, color):
         super().__init__(name, "Feline")
         self.color = color
